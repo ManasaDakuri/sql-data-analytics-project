@@ -72,28 +72,31 @@ These datasets serve as the foundation for all exploratory and advanced analytic
 
 ## Repository Structure
 
+## Project Structure
+
 ```text
 sql-data-analytics-project/
 │
-├── docs/                                       # Project documentation and diagrams
+├── scripts/
+│   ├── 00_init_database.sql              # Database setup and data loading
+│   ├── 01_database_exploration.sql       # Database exploration
+│   ├── 02_dimensions_exploration.sql     # Dimension tables exploration
+│   ├── 03_date_range_exploration.sql     # Date range analysis
+│   ├── 04_measures_exploration.sql       # Business metrics analysis
+│   ├── 05_magnitude_analysis.sql         # Magnitude analysis
+│   ├── 06_ranking_analysis.sql           # Ranking analysis
+│   ├── 07_change_over_time_analysis.sql  # Trend analysis over time
+│   ├── 08_cumulative_analysis.sql        # Running totals and moving averages
+│   ├── 09_performance_analysis.sql       # Year-over-Year performance analysis
+│   ├── 10_part_to_whole_analysis.sql     # Contribution analysis
+│   ├── 11_data_segmentation.sql          # Customer and product segmentation
+│   ├── 12_report_customers.sql           # Customer report
+│   └── 13_report_products.sql            # Product report
 │
-├── scripts/                                    # SQL scripts for analytics and reporting
-│   ├── 00_init_database.sql
-│   ├── 01_database_exploration.sql
-│   ├── 02_dimensions_exploration.sql
-│   ├── 03_date_range_exploration.sql
-│   ├── 04_measures_exploration.sql
-│   ├── 05_magnitude_analysis.sql
-│   ├── 06_ranking_analysis.sql
-│   ├── 07_change_over_time_analysis.sql
-│   ├── 08_cumulative_analysis.sql
-│   ├── 09_performance_analysis.sql
-│   ├── 10_part_to_whole_analysis.sql
-│   ├── 11_data_segmentation.sql
-│   ├── 12_report_customers.sql
-│   └── 13_report_products.sql
-│
-├── README.md
+├── Project_roadmap.jpeg                  # Analytics workflow roadmap
+├── README.md                             # Project documentation
+└── LICENSE                               # MIT License
+```
 
 
 ```
